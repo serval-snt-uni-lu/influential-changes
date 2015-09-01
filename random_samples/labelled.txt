@@ -1,0 +1,391 @@
+============================ codec ============================
+N   2a02fe784259660283fc80124a699ab9c637dd0b PR: 24360 Submitted by:    Gary Gregory [codec] ClassCastException in Hex.decode(Object) fixed. Complete code coverage for Hex (See clover report).
+Y   a8502b5f546eddda66cc5d75c3c4552ea81c9ef5 Move private static data to start of module. Use constants for masks
+Y   31d080c31f10e40952a113b2cb656a6f5d631dbe change http://nagoya.apache.org/bugzilla to http://issues.apache.org/bugzilla
+N   87bc9a67dbbd332bd88c230e9cf1fe8d6c33ffe6 Removed the status html page.  Status should be handled in xdoc or in a tasklist for this project.
+N   2118816d94129503b695990224d9edff3560b3ef Javadoc typos: ascii -> ASCII.
+Y(ITCA) fa32d5d67aebc35b120356a003202ea32dd34755 CODEC-167 - Test our decode with pad character in the middle
+N   8f944f4e8c5a8e61a4c094e36b921b974d27e46c Match release data with changes.xml for 1.3.
+N   93dcc369bdf4423ec7af521d730ecf05f319d974 Set SVN property for @version $Id $
+N   82e2d03e6524ee159b69f7ea760b575e4db0a170 Bring up to date and match up with Javadocs.
+N   362f302b5fe9a63ab0f195b7d3d10e86369e5620 Back up to maven-checkstyle-plugin 2.9.1 from 2.10. 2.10 seems to scan the 'target' dir and wants license headers in .properties to be the header for Java files. Drawback: there are two reports now.
+============================ collections ============================
+Y   ab82b11ddeba2161018a4ed2be3ce28c06408ff6 COLLECTIONS-535: Clarify JavaDoc of MultiKey getKey() and size(). This closes #4 from github. Thanks to Alexander Kjäll
+N   f32d086782b91076dbbc3d446ace15542ca9697d Add serialization version
+N   4eb9212972062d863a5c0e71dff202a7d59ed62c Add sequenced decorator
+N   0d0a25fdfb20069255ded96d6858eb93f1f6de8d Tidy up formatting and tests afetr initial checkin
+Y   1decf8b6fb10004cf19e48f5fc947c444a02c415 Refactor CommonsLinkedList and NodeCachingLinkedList to list subpackage
+Y(FKFB) 66c4b99ddc7daea806c1318a40736d0f5c8fa7bd COLLECTIONS-219 - CollectionUtils - Fix removeAll() method which was completely broken
+N   5b9d61cdbde5162cb3f3bf06e9c89e69d52d2771 Remove commented out code now replaced with better code
+Y(AUI)  5069664f183c2fdbd05df8f649d579d7016b40c8 Make getReadMethod and getWriteMethod public Solves bug 15897
+N   35d4fd2ae778b4c3415b7ea63d2fa7c806ce0033 [COLLECTIONS-502] remove generic parameters from static INSTANCE fields.
+Y   17cfa3461b1c34ab5072d0409d0c9bc8fa9f9bb1 Add functor utility implementations
+Y   40bdd8fe80d882b1b76c2d26d26bb69b032e86a3 Added Daniel Rall's SequencedHashMap patch and ported the JUnit test case over to use assertTrue() rather than assert().
+N   7595bbaa6da978b84f01fae5e65a4c4f45f6b68a Javadoc fix
+Y   c784488a2c9764a20f57dbfce122e44515491f19 Improve serialization tests
+Y   6165d355342621dfe6c5c5eb02baada49ccd7248 m2 build updates
+N   ed32276f0deba39ba9a33eba4b31114dbd541445 Merging from -r468106:814127 of collections_jdk5_branch - namely where this code was generified; mostly in r738956.
+N   f0974d3b28d1049018ad2fbcf4b3284eff6b9f20 Javadoc fixes.
+N   0156cc7f5c86a0b1ee3833d56d1613e9bc0b9a76 Merging from -r468106:814127 of collections_jdk5_branch - namely where this code was generified; mostly in r738956.
+N   cb996e1b9858ae03c328448dc7cb920563d0b57d Javadoc changes
+N   86df16092ee8c24cb65af518b509aee5492d37cc Fix to avoid javadoc generation warnings
+N   ed7710f41c594c030188917cc773adbb6107383d Fix some generics warnings in test code.
+N   94fa451d9523564bb5523bc06661ddfedaa25a87 Merging from -r468106:814127 of collections_jdk5_branch - namely where this code was generified; mostly in r738956.
+============================ compress ============================
+N   ca431cf9af0ed1989484c788385449f446c6a64e some indentation changes and add myself to the POM
+Y   1a117eff6c34ec67b17bf04ac4520a0e65adae7f It's useless to have fail() in a loop. Show all the missing entries.
+Y(AUI)  a2f995081effd263a207c2979c4a3136d3a247d9 detect encrypted entries and say that you can't read/write them.  COMPRESS-89
+N   cadd0ad5843e6c8380d555fdac4e814ba8d59489 Explicit boxing
+N   53f3dbe15f534d9be300f7884750cdadbee789b0 Current 1.4 release notes
+N   ef359b08ed3295f3de57d30f67c41759a3e1af7e document fix for COMPRESS-89 which was based on a contribution by Antoni Mylka
+Y   3479eddef9ac9c7860920facb6db557cea3b2fbf COMPRESS-69: corrected class level java doc
+N   39d544f9c01fe289ed32f5c12213efe3cff9b749 whitespace
+Y(FKFB) 42745d19f181cb60f038c2877851b4e6395293b4 ensure DumpArchiveInputStream closes underlying stream.  COMPRESS-132
+N   fda1a5a15e85feb7eb8a2292c76a2fec2b04cedd Constants should be uppercase
+N   235a6cbbeabb68168ea2a1e67fedcf4dcead7230 Remove unused code
+Y(NKF/MSC)    e809c970e92405f9565003b7cc48f4b481583dc5 XZUtils modelled after GzipUtils
+Y   6d18ae37165f01cd8b7562957a0ad7279613f669 properly parse non-ASCII content in PAX extension headers.  COMPRESS-184
+Y(ITCA) 1b5966b53ef36a7f3876f4965f11bce87b290b58 COMPRESS-270 two more cases where readFully should be used
+============================ csv ============================
+N   a3da0a7a5abd22112fef87e4a4fe9a1b990a960f CSV now has it's own jira project
+N   cfcca024a5a74f96c9892cfa579fafd07783f4ff Added javadoc documentation for some missing parameters for a CSVStrategy constructor.
+N   2ff847ea913737b28f5ff194e9295c9c5cddb176 Javadoc.
+N   6c44286b6d9d02c99b30527f1d1651dfb9e7639f Add missing license headers
+N   64de57a0bc5517dd1dbcc4c1033c673e5661abf8 Sort members.
+N   04a2e9ebe4933d41c84b95074d57aa1da52cc520 Remove unused method. It made no sense anyway, since Assert.assertArrayEquals is capable of comparing multi dimensional arrays.
+Y   a72c71f5cc6431890f82707a2782325be6747dd1 Consistently rename Quote/QuotePolicy to QuoteMode
+N   d030030d3d4fcd0226f92c4ccaf2631e92efd7ee Shamelessly steal the support section from commons lang
+N   5e0e7703a13d7022c070197fa9624dd67c2a257e Format lines that are longer than 120 characters
+============================ io ============================
+N   62df25d508fa8c3cc6146035bed7fc0e1fdcd93e Update JUnit to version 4.11 from 4.10.
+Y(AUI)  9e096b70d1a5c40e7fb38259453a5b03ac79202c Rename the free space method to be commons-io like
+N   71e0e865561af979aa9fa54f9af6cafddf411184 Fixing the format of the license header
+Y   0de0748e9e1e4558e988a5ebe2c866fce75303cd Document current Windows behaviour.
+Y   213d9ce0707ec47de80e230bd9bd970920258066 LICENCE.txt and NOTICE.txt files should be in the META-INF directory of the -javadoc.jar file.
+Y(NKF/MSC)  38318dd0d696d42731d7ca7959f17ba468d6f0dd Initial proposal of IO package
+Y(ITCA) 7e87dbdda37c660a2a873a6263631ad522f7fb23 Implemented tests for the unsigned methods and removed the todo comments
+N   608d0c04713ddb022445a0bcc658edb90397e332 Ready for next time ...
+N   ff101c8d2404bb1cb88aa10370d4e67b9e4f9bf8 Fix a little style problem.
+Y   612754a1dde6dbcaea922b1a48eaecb3ba8284d3 Use Commons IO ByteArrayOutputStream
+N   3d68516cd54f2566586ea84497b0b91e1aad25ee Making sure all the pom.xmls have NOTICE/LICENSEs in - though haven't done VFS
+Y   ae3c2a773ceec5a2a6f82115f2ac004a8bac2eed Made a start on getting us Checkstyle clean. Fixed a few hundred gripes, but there are still many, many more.
+N   1d85d8287b11e97cb3ae989a3cb70a0c6230df82 added the classic should NOT be constructed warning
+N   7061ea293754b8186c7148e3dc775e662888de6b Fix raw types
+N   511fb75d74f39ac579b2585c44a46ef2d0ea463b Setting the maven repo - apologies if this borks anything
+============================ lang ============================
+Y(FNFB) 32957d0223f201b908fff403dbb875151027b80e continuing performance improvements-- now uses a binary lookup
+N   e0248340fec89f7c3e0b242bd2f1da91fbf194ea Removing unnecessary code
+N   4f0bc095004545b516b2a519cd57d99ef7d70077 Add a little teaser for 3.3 to changes.xml
+Y(NKF)  27d31df834f8ee9f89bc9c5d780d460aa31a8460 Applying my patch from LANG-298, based on Tomasz Blachowicz's original patch, and adds getPackageCanonicalName and getShortCanonicalName sets of methods
+N   145240583f5d7a53b3869fef2f9c448e05cdf672 LANG-692 - Add hashCodeMulti varargs method
+N   2d3a791d4d44c12531065ba9c5f9f26f67bc07a3 We don't use the component name in since tags
+N   9c8c5d3bf87ff7c3422298681eac516c3b377fc5 Fix Javadoc warnings.
+Y(FKFB/ITCA)    75d5b74a1a7ef68c5169f4b44cdf972c1ab07ee0 Applying my fix to LANG-645, and Mikael's test case; fixing the FastDateFormat to properly include the locale when formatting a Date
+Y(FKFB) ced9332981d2efce73e17809ba9e5e5b7cfd369f Improve CharSet testing bug 22095, from Phil Steitz Rewrite CharSet parsing, much neater and simpler now
+Y(AUI)  c2560c028173c3bc0a4627d4ce5ce221bcc9be66 Making it so that NumberUtils.createNumber throws a NumberFormatException instead of a StringIndexOutOfBoundsException when Strings such as 1eE are passed in. Thanks to Ingo Heinrich's report and patch in LANG-638
+N   44c28a1e9e109378d4c303928bfaa9c4e41bf227 testHtml40Nbsp
+N   4b5a1b7f51d1409e88be9109d904601ff0e1c07c Applying Sebb's patch from LANG-540 making the NumericEntityEscaper class immutable
+Y   7cf48fbeec5c810bddf33753aac105ebf3bd6ff6 LANG-1052: Multiline recursive to string style. This fixes #34 from github. Thanks to Jan Matèrne.
+?(ITCA) 934bfda1de1319419ed77a546b7430909da224f5 Additional varargs tests
+N   c840ae4053d29f8bc7191002353f4de3ab1953e3 Remove JavaDoc links to private API
+N   d3931874702f875d6af3088d719da58a3c16e710 Changing the way we handle listener list.
+Y(NKF)  ef3ceb82630eb2e0244780e6f5281bacf5f88191 [LANG-553] Add TypeUtils
+Y(ITCA) 732948412aa02860175b4f177ad0737ca35ec802 Added a unit test to show the bugs in bug #14883 for countMatches method
+N   d6756778276bde9bd761ea4f03a956e3941eb106 Remove incomplete Javadoc tags.
+N   beb36db500ae083d9976a50f4521ea5af12dac63 Can't link to private inner classes, use public field instead
+N   54389a64f07cd604ba4bcbd3dd630cc4181ffd7d Adding a manually generated 2.6->3.0 clirr report
+N   4c5be8edb2634e56439caff37e973ac8ca344813 Javadoc: Use the active voice.
+N   bf2ea1b3572c785c4082f1b1f70b0e91b9cea81f Use String#isEmpty() instead of String#length() == 0
+?(AUI)  359842d99981345210c2e327c6b7c7c5b584bc5c Note the CharSequence API change
+Y   fccf3cd2f7d63142019d3d3b84bfc59a21d9451d [LANG-501] Added MultiBackgroundInitializer class with JUnit tests.
+N   0b8e933b7a396d74ad68e9fa570b2694978843cd Type doesn't need to be ArrayList, and updating for loops
+Y(NKF)  0e658d4029f860fef3faa72490c1d2806d693791 Added compare methods for double and float Added min/max methods for long Added public constructor with comment
+N   74642d15193c7ebcd363820b1aa5ba6e8f853737 Dropping the serialVersionUID from EventListenerSupport per LANG-765
+Y(NKF)  e8bf22f31004c3242dae14ff2118c20ad2906c31 [LANG-501] Added CallableBackgroundInitializer class with unit tests.
+N   cb0c61e7caf99be3db763c8b33b1066582b536af Make ObjectUtils.defaultIfNull generic
+Y   171676d5bc9527b971fa3140d29d018840741cc0 Fix cloning of array types.
+N   72fe1fb0a4fa4f1ac6b983bd36c01b041f17334b Extra tests suggested by Clover
+Y   ec09e01c8bb73de2052debfac5d70c110118f8a4 [LANG-545] Added ability to create a ConstantFuture object. Thanks to Stephen Colebourne for the patch.
+N   7ed251594318b734c5914f988cc6444c13ee0324 tested some missing bad states
+N   ee18ef7422549c243f9144486dc45f7e6510599a Change of groupId means clirr needs to be pointed to the old groupId
+N   f37f0b06b7549cd5b4a7d8cf9d70677f494a723d Using StringUtils.isEmpty() when testing Strings.
+N   c09ddc67b0082564c3fe4c6ea0edcad90dde3ba3 Typo
+Y(NKF)  0f3e7b3d19574b27be1c391fbdfddbf957aea2b4 Bugzilla Bug 30334     [lang] New class proposal: CharacterEncoding    http://issues.apache.org/bugzilla/show_bug.cgi?id=30334     Comitted to CVS for further comments.
+N   73eee4b0062dc473d23c6a7509c439b70d3e5c1c Javadoc typo.
+Y(FKFB) 1313a65c11dea54f1baf492d4185fb2d673b6716 Applying unit test and fix for #LANG-292. Also fixes a couple of problems with the unescape(Writer..) overload that came up
+N   d6525dffd2557ff1512c4729dd113e1a6dd2ec0a Remove my author tag, add ASF author tag
+============================ math ============================
+N   054e2bf2f54b75d88a35239d0b09f2e6eb8d1340 Updating to reflect website change
+Y   ef76ef299edebd654ddf0382be577a7d94d59ab1 Added accurate linear combinations for DerivativeStructure instances.
+Y(NKF)  21ef26838dc27b12450eac55d12e0562f3e64721 Refactored Frequency to support cummulative frequency counts and percentages. Also eliminated the name property.
+N   a70cb1668ea4c0fb04aab60f04bb8dee3499f2a4 Removed unused @throws Javadoc tag.
+N   83bd6ba8de86610dc85217eb14ebc2b1c7aca3a6 added a section for the geometry package in the user guide
+Y(NKF)  aea0ab12424c527cdc167fd9d4db3bb3d9dfe338 added conversion utility functions for   FieldMatrix<Fraction> to RealMatrix   FieldMatrix<BigFraction> to RealMatrix
+Y   3e53d407946ad1f88ee128406e3671ae63a3d756 Fix typo and avoid computing an unused element.
+Y(NKF)  32ea2a389ab8f2f8c5620498be82f1ae174e1b38 - refactored top level of Exception hierarchy, - added getPatern(), getArguments() and getMessage(Locale)   (names chosen for consistency with java.text.MessageFormat) - deprecated some raw constructors as the top level exception are too   coarse grained and intended only as base classes for easier to use classes - added several constructors for use by more fine grained derived classes
+?(FPB)  208aff49c1df6cafba5271cc27953e08d0773aef Added check for System.out.println stmts in code.
+Y(FKFB) d4b02f6a3a90cb468731d6156d571d284bd070b1 MATH-393 Fixed inconsistent definition of "getResult". Modified associated test accordingly.
+Y(ITCA) d5a2cabb819cd1beb1c3af45060945a2d3288121 Add evaluate/increment consistency test.
+N   2d2570442a6503f8d2b09fe4157e3c92d27cf8d8 Update dependencies to parent.
+N   8dd233d16bc90dd4791e36c8d4c769ce2345fa50 Removed Dependency on BeanUtils and regenereated build.xml to reflect changes.
+N   412e59c28601689f093d1ab32774fa031c0815be Improved (?) javadoc (MATH-677).
+N   c4f77587f5aa48c717cd14d81ae2c24f0e7b300e Update message count.  Should have been in r1533824 commit.
+N   87d350f022e7f3b49cff044c36604c6340576d87 FixedStepHandler now extends Serializable. This should have been done before when the integrator and problem interfaces were changed too, but was forgotten.
+Y(?)    591e3d166e0e3202c5a4a577077a5a43c101f65e MATH-621 Unexplored code path.
+N   a888d20dc639413343f3c92373aa91ab69fa9584 Eliminated *here* links.
+Y   e0e56f8055d9dd27539038047099570d83e21622 Base class is not immutable.
+Y   48fcbcf982e2046395d4f9f0615538b7c13d1a86 Fixed threading issues with UnivariateRealSolverUtils factory Jira: MATH-254
+Y   c4f81a87ee8fe307bc391ba04caac04e4c51f06b MATH-849: unit tests for double Gamma.logGamma1p(double).
+N   372cc5eb5c422900297e4d3bf6c6e95704428c9d Fix doc regressions caused by marging back the 1.1 branch.
+N   5ba1bde434614cc8f73425146638ecaac30a4005 Bugzilla #22002 from Brent W's patch - refactoring of UnivariateRealSolver
+N   3b501993588d27d91ad526a436e3a10ecc8d6e8b Add missing Override tags.
+Y   0900d78b9a6df09bfb354c4002e51450b4788238 Ensure correct sign when toRadians() returns zero [Not needed for toDegrees() as the calculation does not underflow]
+N   55243469e02a516b19a2023f10ca7a80b544d928 MATH-438 Removed deprecated class.
+N   d253634bd46dbdfd3171266618fb9657357dacdd Field might as well be private, as there's a public getter
+Y   8f09fa850a2a73f17b95e6e26c348eddb1b6c11b New constructor and "canIncrement" method.
+N   5a8eff6985f294b5af93d7cee829b5cb4d7ad9dc Fix typo.
+Y   6a82146702f0f420879108d5d4d40a9297a03d4a Fixed error in TTestImpl.homoscedasticTtest. Implementation was incorrectly using heteroscedastic t statistic. Also improved sensitivity of test cases. BZ #34677 Reported by: Gilles Gaillard
+Y(FKFB) 85ea9b32bdf8185c81ef2160f060d48f40b9a680 Added missing keywords setting.
+YYY 1f72a13a3720a26443a0fb595d745efbe5f6252b MATH-1027 Changed visibility of "IterationOrder" to "private".
+N   e375464b76a003569fdac834329a1305ab74144d Added 1.2 release.
+Y   c60827b0b79a5da5da681f6b6f63e745f13fc1e3 Changed return type for eventOccurred from int to an enumerate in ODE.
+Y(AUI)  f78206e0658d13a73f6776779139b3ee5bd62528 MATH-413 Optional, user-defined, convergence checker passed in the constructor.
+N   1977d4d9682daf14620b0da472de5aabc98b8780 In o.a.c.m3.Incrementor, modified constructor to allow for null values of the MaxCountExceededCallback. Null value was previously not checked wich could lead to a NullPointerException much later (at exhaustion of the counter).
+============================ spr ============================
+N   e02c23eea47ffe2920dfb4439568ea3e55723666 Straight JmsMessagingTemplate setup based on JMS ConnectionFactory
+N   1ca943c6810941d83a3f09b0e60a551f1371879c Fixed javadoc warnings
+Y   ad93d20a6c6987ec15dca9a43eb1e3a02ff2183d SPR-6749
+N   b4e61dd9df0af43a38b7d441c653c369baaab365 moving unit tests from .testsuite -> .context
+N   931ea5cdf4769b59bf0280eed95599925d0400cd polishing
+N   10be5f08a56d46ff13d9d2a234626bf1eafda4a1 moving .jndi, .mail and .mock.web unit tests from .testsuite to .context, .context.support, and .test bundles respectively
+N   06d3e1b94ef482c9055805abcff19be613ae31c4 Fix Javadoc typo
+N   153680a5e6b252e2f6d6f1257732df5c6f92fe66 polishing
+N   9154871a451e679c8fc68d454085ff79e43a45fa Raised all dependencies to latest possible maintenance releases; introduced additional library version variables; consistently grouped dependency scopes
+N   1e9e6c9f6b894b12718d09e8d24b6a335a3f0894 JsonPath dependency upgraded to 1.1
+N   c7b106577fd17d0949dd6f8ca748556bf77850aa polishing
+Y() f8bf577eff0252b227e5937d8e3a5cb28c2f3385 Fix failures in PrintingResultHandlerTests
+N   9f8d219146a789698a60bf5e98df35ddf6374fb2 Remove default profile during environment merge
+N   6a6b441ffdf88a4c8b837f19728f596a57baf296 Document annotation-config / component-scan tip
+N   c7a867c45cabb4aab2edbfc350741b6d6877290e Latest dependency updates (Guava 18.0, Derby 10.11.1.1, H2 1.4.181, POI 3.10.1, JAMon 2.79, JRuby 1.7.16)
+Y   e7298a88d6034d6534f80b516ec793ea14e4b0cb [SPR-8387] Fixed logic errors in DelegatingSmartContextLoader.processContextConfiguration() and ContextConfigurationAttributes.hasResources().
+N   e9f53c6ddf3ba6c7ef797ad2f2657054e5901511 Polishing
+N   2c030d4dcf4866bccc7a59d47398d6bc0de52ce2 Added 'processExternalEntities' to JAXB2Marshaller
+N   0d5c5a3d3325f4f65caa54993e58b2e9d18c8a49 Fix white space issue
+N   b4b169c937975564560b70154c315646d6294a79 Removed unused import
+Y(?)    118ee3fce89f305ea2fc938d539435218fa4e9cc SPR-8652 Fixing queryForLong and queryForInt implementation to use correct expected type
+Y   0400b68afbbacc6229a25c6b278cc8cb23be6dc3 SPR-6240 Added namespace support for ErrorHandler strategy on JMS "listener-container" elements.
+N   2642cf2e05e7851acf4727c09b7c0d5dc71dcde4 Replace EasyMock with Mockito in spring-jms
+N   90081f787f2f24e6ab73baa81c9b11510d87c799 Fix Cacheable javadoc
+N   2dba480d9d41ba62c50cf7b3414e01fa7b0b2def used specific SLF4J versions for running the test suites of individual modules (fixing the Hibernate Validator 4.2 upgrade)
+Y   38f138385350ef3bd64ffcf5ace561131766eb0f RESOLVED - issue SPR-6321: Regression: ResourceEditor in 3.0 does not ignore unresolvable placeholders, but it did in 2.5.6
+Y(FKFB) f72c431e8ad473b98f53d9cf980c23f7b509ef45 SPR-7257 - AbstractMarshaller incorrectly expects DOMResult to already have a node
+N   3920c5a158530f6278631648e4fd3761daf3c5d0 Polish @ComponentScan/@Configuration/@Lazy Javadoc
+N   3337fd32cba66aee549e4dddae61b86fe80832e3 Refine ResolvableType class
+N   577da8f8910e4ad329643f9345f21a39c0a82e52 Moved agent to instrument
+N   6e0400db3252f4ccc558b746b020a459111743ef Polish Property class
+Y   c9f0e68c82c57ca1f16aba0287979e46005f4b3d SPR-5307: Committing test but can't be uncommented until Spring depends on AspectJ 1.6.7
+N   a6124793fc44779b569fbbba6fd4ec8804b56558 polishing
+N   98218687070fc47eb6f91e81d3d714bf96068cc5 Refactor and polish various Comparator impls
+Y   2046629945d288944b13401958f5d27e04bbe835 Add WebSocketClient and WebSocketConnectionManager
+Y   4b291c665c202e73f701d6bd978186635122467a Upgrade spring-test tests to Hibernate 4
+N   8678652f3e5e9f53cc63486544bcb54cb13bf672 SPR-6528 - PathVariables of type double
+Y   811bb1b0c9a7e66281155b507b41226b058cd8f9 Improve synchronization checks in STOMP relay session
+N   e04a7569687a4da98f1c39fbee1ff209715c3fdd Support AntPathMatch URLs in URL ResultMatchers
+N   585627319d70275da330fcb943c2c86f3fa30098 updated version to 3.0.RC1
+N   9c5a538ae7998c0337d53e7280f6b0667342813d bind and validate lifecycle rename
+Y   0304a4b74d216b1efa87796cbf05ba2d0f93a22f Revert "Introduce Ordered#NOT_ORDERED"
+Y(AUI)  465712c84521c8fdd9e7caa46c1d399a3629af8f Add boolean flag in RequestMappingHandlerMapping to indicate if type- or method-level @RequestMapping annotation is being introspected
+N   9f07b151853f21bc363340fd3056ec14118a1e89 Added Javadoc where necessary; polishing.
+Y   2397b21096ad1c184d9f22629f74a6c44a9ba923 Upgrade spring-websocket to Tyrus 1.2.1
+Y   b482d6db121033e7ee0feed2854d277343f393e1 revised the detection of Sybase (SPR-6053)
+N   9796af72db122a75ed43e15acecbc463b8c40ef0 Improve JettySockJsIntegrationTests to show real error
+N   02aca9c754cfe121330a3b421e1da26dc3d4cadd Polishing
+Y(FKFB) 4267f8488fed193a3d4fc80b5d4240ce51c728cb SPR-5975 - BufferedImageHttpMessageConverter doesn't work on Google AppEngine
+Y   62e5b9da0499779ab572390082cd98d1ac70509b LocalContainerEntityManagerFactoryBean's "persistenceUnitName" applies to "packagesToScan" as well; DefaultPersistenceUnitManager uses containing jar as persistence unit root URL for default unit (SPR-8832)
+Y(AUI)  57874a6050d7291a9a7c74ef476f50ae7270dca5 SmartApplicationListener interface supports source type checking; SimpleApplicationEventMulticaster caches information about event/source matches
+Y(FKFB) 4c49cc73b28e89599ae95c0dbd5b099b164bba01 avoid NPE in case of no "hibernateProperties" specified
+Y   3d5e245374c997436d3802149c5ab46f4300a389 CacheNamespaceHandler etc
+Y(DC?)  79ed87e3d57a1ec774deed5d6b3278234a051e58 updated cache aspect after CacheAspectSupport base class changes
+N   c778868d66e6af14bc13e408f1cb218f4399c0d2 WebMvcConfigurationSupport uses static NoOpValidator instead of anonymous inner class
+N   24dfe8ec19e90b4fae1eb47de9cd0fa3b98687fc Replace use of jdk 1.8 api
+Y(AUI)   fb9fb00c04143480aa39b6538f4d71aba461571b Update GenericWAC to implement ConfigurableWAC
+N   660cd3d00abe1b7006715bdc0b967e78ded09149 further re-working of the ORM chapter
+N   caf2af077a3a6454cef39678564391c4abaf8eeb Polish MockHttpServletRequestBuilder
+N   3740380a7a35be3a4e4b180b207a967cd8122380 polishing
+N   6285e61435a69f885747c2f122a37a8012526d86 refactored jca.cci tests, prepped for move to .context
+N   95ae6344c55f8ad298dd5fd22cbea4935d4540d1 [SPR-8386] refining JavaDoc for MergedContextConfiguration and related classes.
+N   20ec13ded5f35460c7a75b15abeb34d8e587c3f9 SPR-5529: removed package.html files
+Y(NKF)   80a16c6d10a5ede0c32a3fdfb842e316715e52f7 PathMatching options:configure all HandlerMappings
+Y(FHP)   03d6350e4b3c7e23e3cc84bf3f261f2c53b5b1e9 Fix issue with resolution of WebDataBinder argument
+N	5614e257d1749b5a83091e4111f5107cbe645766 Polishing
+N 	d42e24a752c3df6a5e114073b24b7fd27756c097 polishing
+N	1eaaa9a446c664991f9cb744e9dbcde8b6bca357 Add empty location check to ResourceHttpRequestHandler
+Y(FPB)	6b3284f6b00b170c747a900033dbad6748cfd503 DefaultMessageListenerContainer clears resources of paused tasks when shutting down after stop
+Y(AUI)	4e24d66ff70b8dc6e2184b2f723a57e387da523d Create a builder for Jackson ObjectMapper
+N	47a432719348dd9773a1bec2c3500771168ab962 Add JSR-107 cache annotations support
+N	2983e3ca31f5dd2a1498675f37c948e1214948e7 Merge pull request #435 from snicoll/SPR-11280
+N   53aab24690081b4433e8bbe720b51fc96a2c0393 Polishing
+N	62d73696070d17f714ee0f4b31f5c61f3360755c JavaDoc polishing
+N	0a68d265fb07aa2ebf6332c3d6a92d12caac7cc3 Polish indentation
+N	f37efb42790c1da0ae858a2c6da4c809e0f9bd6f Polish Servlet async request processing
+N	8aface8e5deee51d73721596b182fd13356b6d95 fixed JavaDoc
+N	7af92b483a89bd7e7cea38f57176fff6c8fbd11c Fixed HierarchicalUriComponents equals implementation
+N	e59c821603725ac9a8b77c0642392c0e9679d8d8 Fix PathResourceTests on Windows
+N	46b24dbd3335d80931aff7ff0164aea31fdd6453 Polishing
+N	c4194ee1755e5f2a90df3839a5dc687aee10653f Added paragraph on BeanPostProcessor side effects when autowiring dependencies into it (SPR-9577)
+N	14b69148f91388eb76b9554fd66abead86dba4ca file names based on section id now; updated sec ids to match conventions
+N	59d9f73f46c147856479f17faef65317ce6eacea ignore client proxies for export
+N	4bf5a0234c6c5c5d6591eb0fa52db3bf09573d9f Add doesNotExist match to HeaderResultMatchers
+Y(NKF)	ef227c5d0171834e9166ed0b48ed342a4fd2dff6 HibernateJpaDialect borrows JDBC Connection on demand (supporting aggressive release; SPR-6895)
+N	a53987ace14e0b3d7c50b0ea7f4822393f8da5be Renamed JCacheEhCacheTest to JCacheEhCacheTests
+N	431aed3b01e4357619d32d3c26e5f7331c204c25 Fix typo in ide.gradle
+N	81c259fe42bfed02fa2c50fba28ed7c27c933e64 Explain mock scope in static method mocking aspect
+N	be53a80657a7e613f148c9f3a7fbacc74eb0fc77 moved ApplicationContext-dependent .aop.* unit tests from .testsuite -> .context in the process, identified and refactored two genuine integration tests (AopNamespaceHandlerScopeIntegrationTests, AdvisorAutoProxyCreatorIntegrationTests), which will remain in .testsuite due to broad-ranging dependencies
+N	7f4bf41c2320aa8e552ca3c6d568cfa65adc7f65 Improve exception message
+Y(ITCA)	 68444367b79e8fdb4863aa0375734e78d03d3210 moving .test.* unit tests from .testsuite -> .test
+N	5cbc5b19019b1b78312d34a58ec7e170b28cc944 Release version 3.2.0.RC2
+Y(FPB)	9fbb57c3ece4d5335bf7885f3b81996288c22f1e Fixed CGLIB class validation to not raising warning for static final methods
+N	060b37ca8db5a3b822029800348a3fe0f0b1b15f Fix typo in MockFilterChain
+============================ storm ============================
+N	9bfb89efd4ba3a81cc83530e0450548aebc8dee5 document -c  flag for storm client in the help printout
+Y(FHP)	c7a7127fcfe6aaefd0dab928334095368cdfadbe STORM-296. Storm kafka unit tests are failing on windows.
+N	06a3fa9ea6e5c0f7a7b12b601bb1951269bf5b2b add topology name automatically into config
+N	66810d62c8b02f107a8dc3fafae831e21c752e35 bump version
+N	a3ed583c30c9ec55e2c51f3e3124e60f3b61bb1a minor cleanup
+N	c41ad3a2f9173d460a29fc0479ac658d9ad7dfe2 Merge branch 'master' of ../storm-hdfs into storm-hdfs
+N	b9c57eb9ac20cbb44af0c4fd64c8de3f219bf3c3 PR-3: Add step-by-step instructions for the curious but unsavvy
+N	1d841941a848bfd17e9a830413415cca21ff76f8 Use TOPOLOGY-ID instead of STORM-ID
+N	db79ab6e66e437388c2b095b6ceaa01fc2e2f28a Merge branch 'trident-local-or-shuffle' of https://github.com/ptgoetz/incubator-storm into STORM-245
+N	72c476c1d4e114f85b29cc794936c3f003369a71 added test for system stream
+N	5ba41627b47506d867eb6766fe91ec0a21d01f48 rename storm-component-info to storm-component->task-info for clarity
+N	76c5a6c2911c7b2524bd563d0e63d1a2d8ab228c Merge branch 'STORM-331' of github.com:miguno/incubator-storm into STORM-331
+N	3226a1ce4641c256134de995d673596e8aa4c603 print usage if no arguments given to storm script
+N	c15b28fd71098f77323680db9b1bb0e76cfdbe94 fix metrics test
+N	3368d34f37975e6c32cb8810a34cfdc7ad173fa0 Merge branch '0.8.0' into 0.8.0-better-hooks
+N	2f148af607b6d7c88725997f10453fd136aa5dae update changelog
+N	dadb794cdd45d1150242e55202a50c3254e6fcfc Add definition of system component and tick stream, integrate with TopologyContext.
+N	a29958cd219e3fb0c07c5f5ef5982174a661a57b Merge branch 'master' of github.com:nathanmarz/storm
+N	29beadd5983931b230024018bd1dc24183a6a2b5 throw error if topology config is invalid
+Y(FKP)	b66d028f90e9376c16c0be1736411300d4bad587 Add in the ability to configure the number of worker threads for Netty messaging, and set up some reasonable defaults for Netty.
+N	3b21a8be2c51e5cf4e9616fbedafa278350c5840 remove StintBolt
+N	aa91046896db51e62cb66ae7c2cf6a9400d48755 progress
+============================ wfly ============================
+N	dbae548f8c2c3643dca19639fe5ee172c955f8cd remove the used file...
+N	e83deb58579baa75f555c8e3c5cd9cca3bf2ea52 Minor change to arquillian service
+N	fd19a0d34676f908b421e1c7de21654867ac2739 Add missing dependencies to failure message, if there are any
+Y(NKF)	8c9d4a1a3906eabef79ae9357f62869cc6c3691a [WFLY-2864] WildFly Weld Integration
+Y(FKB)	5512b599a844ac9e83cbf453f18d33fabec7be32 [AS7-4008] Do not enable remote JMX by default in domain mode.
+N	c03215ec476ca658f651ad27833a96826dd8dc17 WFLY-682 Custom JSF deployment with CDI
+Y(NKF)	09c4282702993608f0ae336f19e7a7ddf1c5071b Fix XTS tests for IPv6
+N	579a8065ac8d17fc59def7af421b9f37e105070f AS7-1162 Better failed dependencies reporting
+N	6efae3c7af87528ae1df3c7bbb76d11a9c840d7f [AS7-4090] Tidy up i18n issues.
+N	1606b2303376810405a30228a9f7d310557e4c0c Fix compilation errors
+N	08251f9899267eac4a21defa1d23901d9b748f6e [AS7-5662] Remove managed server from process controller if on host controller reload/restart the process controller reports it as stopped.
+N	9cc9ed35dace9ec3be2826123aa3df5c56cf4c90 Bring in web container content suggested by Remy/JFC
+Y(FPB)	9fc96a178fb7ced6a5ac9fe87eea73cfa25ffcfc AS7-785 don't ignore unrecognized command arguments, fixed deploy command in batch mode, in batch edit command fixed the index for the command being edited and added to the candidates
+N	48050c53e36261f7c7d6252d4ce7917c74921a2b Ensure datasource jndi name handling is consistent across all handlers
+N	9b163bb869b2bb8169fcbbdfd8f4cd21f8cb8ae8 [WFLY-2218] Use the new varargs variety of addMavenResourceURL in places that could use it
+N	ee84089a5635daa9ccfabee7d611ee68ee9f118c Fix build
+N	ba73a6e9819e6333025ec0f3090fac6bcd1e2f60 Use default JAVA_OPTS from the conf file when using --debug option.
+N	0ee908a32c8fb0145b1bb01ef6cf36e405b6ae3b [JBAS-9104] Add description text Smoke test should check operation descriptions
+N	fd16f47d3e6d932b868b04b3dbbb22d190b8e354 Merge pull request #5829 from stuartwdouglas/WFLY-1901
+N	3a719a1a099a869174996e2ad0a3b2723ca049a0 AS7-4931 - adding system properties for configuration history length and number of days
+Y(FNFB)	 9976ad96074d2285d16b63431b70f19d5c23ca8b [JBAS-8838] Improve ws deployment detection (@WebService needs to be on implementation class, not only on an interface)
+N	b38082a5485b794496aaf91982daeaca9905227c Changed PicketLink libraries version to 2.1.4.Final
+N	55623b040dd4fc7a3e671ef6b7a18aec5a559492 AS7-3881: HornetQ multicast configuration
+Y(FPB)	084102c43eda2cc5b57b149f103d65ed8ae0f5c7 AS7-1736 fixing on services depending on JCA service to use prefix. AS7-1691 first ra deployed is without suffix now to be backword consistent with hornetq-ra name
+Y(FCB)	d77255ec907ef37f57a044f3cc29ef2d5f7900a0 WFLY-3361 - IBM JDK's XSL transformer behavior causes invalid config XMLs in some cases
+N	adccab823675fb33685c5c0268388fc9857b7047 Merge pull request #6497 from langfr/WFLY-3610
+N	eea95fa04542ac94a0603a57024393b5d8078147 [AS7-844] Exclude jboss-aop dependency from ejb3-cache
+Y(FCB)	ee0f3bc4c393bcb927dfa74759475e7b0a49d477 WFLY-1802 Upgrade to Eclipse Aether
+N	8868d42fac85f34295b0707dde7873ffd21b88d4 [WFLY-490] renamed variables after ControlFlag removal
+N	453cd1bbaf3bef4f0395157eb99f0431d6d6944a extend AbstractWriteAttributeHandler instead of ReloadRequiredWriteAttributeHandler
+Y(FCB)	fcd27568959fff13fb9ba15008b9f2b7c77b570c WFLY-1632 Cannot deploy distributable application when is defined jdbc-store for web session
+Y(NKF)	7e8b812b1dcaf0e93ecd041f44ca7af98598457b JBAS-9141 passing Hibernate annotation scanner in via hibernate.ejb.resource_scanner property.  close reference Annotation Index and temp classloader after calling provider to createContainerEntityManagerFactory (both are only valid during call to createContainerEntityManagerFactory).  jpa demo change to depend on HibernateAnnotationScanner for reading entity classes.  JBAS-9141 make sure the TL gets cleared
+Y(FNFB)	 1fa3d92b65890f7c7443d2addc57f9146cdad7d1 [AS7-3001] restart-only flag to host reload op to keep servers alive
+N	55a35e7628512e13c87e4b185fa269fc4da3d51c [JBAS-8863] Adding com.sun.xml.messaging.saaj module
+N	ccc66367d7e1446360be2f5d003da97846d4d5b4 Update key-tool plugin to work on jdk8
+Y(FKP)	11f53a48fbbbb07d107db75aafd5d2ecb444ca5c [WFLY-2733] - Federation subsystem changes.
+N	0120da3a759de324ce0846b271c017005a8d0e24 Update to HAL 2.5.1
+Y(FKP)	e6032e06bdf8a752727c8e05c5ba558e6230408b fixing services to use correct ClassLoaders, Service references and to remove themselves properly
+N	59fec25eba20d2979b8871084eb741292a57908e WFLY-1793 - allow inheritance of systemPropertyVariables in submodules
+N	a47a40bd263cd35c3089fc0a2328fde14a2264e3 Set up java: contexts for arquillian tests
+N	a6b8a01d4f0eb4771a0e79d7250f1ddc1c5517e3 Fix multi-JSF support issue reported at https://community.jboss.org/message/778493#778493
+N	c9c7a8edf6e75b4a8cee0ec673ae30b6e6a32ecd path from remy: add host lifecycle hack, and fix fragment processing
+N	ce7fc9c311a10c0cdc2620aaea611497199ffe58 AS7-1257 Command given in CLI help text is wrong - also changed operation and parameter, as recursive true of false did not make a difference in this particular case
+N	39919ed3a963d45e310b515865dec76c7234da57 Update Remoting and XNIO to really, really get rid of hangs forever, for REAL
+N	761c81333a612ebfdddd60578285e804c9a4d156 [WFLY-2609] Consistently use DeploymentManagementResourceRegistration where subsystems may mutate the deployment resource registration tree
+N	cf2257d08a167114eab6207288a2816f93e6e086 Merge branch 'master' of dmlloyd@stout.stacksmash.com:/home/baileyje/jboss-module-repository
+N	aad1151fa85c1ce3c18359ab987334245600aa5f Remove bunch of hacks/legacy from our build
+N	589e366c439b29a6d628c93f02e7b32b1744550c Make Drivers work from DriverManager, for those who want it
+N	c1c0f267ad85621a475b6684743a675c2ba7d1ea Hack to make sure the server start message shows even with on-demand services
+N	f2a12738b4a5d31f81e03612d11dc4f733e56ec7 [JBAS-8448] Quick fix to use UpdateContext
+N	e3ae12df4ab67088d41d21a483230893e353ac2f [WFLY-3255] Update core model version
+N	a88ce005cae16cc27c3fbde6545aa532ed343c54 Update to modules 1.0.2.GA (Fixes AS7-1571)
+Y(NKF)	fa620bd17c611af381e66f3d948633ab1f99bf5c AS7-5225    Support for TLS based mail servers
+N	8cfa6c5be87998f59a1c95650e2d410d8e021807 Fix the global operation handlers
+N	7f3f5d0f86c4c329d0dd4a041df6ebc9889c5975 Add support for sending data on stdin via PM
+N	69eccd345a0ba5382bd9daa838d39936b3080837 moved DomainTestSuite
+N	bdcb6a0d63e97ef8ba61212f1a6d0527776233fc AS7-6018 Use the value type when validating nillable or expression parameters
+N	172b7b3be6c5b0bafb12e26024e3db5815e0a22a AS7-4510 Add a reconnect handler to remoting receivers that are created for client contexts created out of jboss-ejb-client.xml
+N	8a8c325f6ecf37bd569b14019ef7a212fe830269 AS7-3857 Domain management security config fixes
+N	32f71e9f5074eb301e2ee76456a80b6cc705ddcf [AS7-3509] Set TCCL for resource adapter lifecycle methods
+N	6ae36a4f4e466594e35e3c4a0c6d355f74981b32 connetion-properties -> connection-properties
+Y(FKB)	1a7475d102b6ce2059ea46fd3ca3c1a3d2189060 [JBWS-3343]:Deploy EJB3 webservice in a war file
+N	e855a794f166224cfc73b4cd559e3e217b93d57b at least process some actions for standalone
+Y(FHR)	99862e1ad4ae6e92f9c8318a0192ee5984cddbfe AS7-1560 Resource-ref creating circular dependencies
+N	63470b4e43678df0ed59890a3c4897d57ce55fe4 Use current version of schema when marshalling
+N	eac2b1177a765610cd50c1cb7836733f475e665e Fix the picketlink module pom version
+Y(FHR)	e9f10b79ced1de6262dfef5730c81072cc9fa037 AS7-4592 - Adding mime-types breaks the server
+N	a5c3dc72fbb5b1c8cbf55e29320d691b86486cc0 AS7-6015 Fix CDI interceptor ordering as per the spec clarification on CDI 1.1
+N	d82cd1e04c494e2e97ee4cf63610c4ba07ca6aae Change EJB Management to just store the ServiceName
+N	c3594426f19a91c9667eec4cdaac60a430475ef5 Reduce log level in parsing
+N	f11881d30f3aefc2d3ae5a890e8009c62ac8608f Remove the test for ModelType.EXPRESSION as we have validateResolvedParameter().
+Y(NKF)	4ff358d1b79d546281bff9a4d70f8ee9acb5153d add a registration for host/domain/server ops
+N	ea9399207d4918c39d794a5875d56cb0e66b182b Convert OSGi subsystem to use RD
+N	ce826ebe5ce230327412e9cf95f4a44d2cf2c717 Fix @PersistenceContext processing on methods
+N	ab42f9c720311b4862349c9c8cdd817c5f6ba6cb When running the arquillian managed container the server is already started don't start another one
+N	816c22838f9bf851a6d2678fcb08e2c478af54ab Do not cache ClassFileInfo instances - Weld will only obtain them once
+N	7a7e132c3c4aa99967e1097a45d35413c8685250 EJB 3.1 FR 4.9.2.1 there is no component inheritance, so local business view must be explicit
+N	96c57fd5fc6c35d4ff7b925d2a60bc29d77b8e6a Remove unnecessary module dependencies
+N	2d65433a7f65c8cb1a44478d0bd7128a5fac267f [JBAS-9178] Use formal parameters instead of system properties to override default configuration file
+N	fc56c69e730a92e174077e4a9463387f0ae24900 AS7-5710 Add support for CDI interceptors and decorators to POJO web service components
+N	7ae23d186af3582f4d524329fb71a5668a9cd83d 1) Server side support for propagating hard affinity on session creation of stateful session beans 2) Add implementation to send cluster node addition/removal messages
+N	fb431577dea66fc9bf267c86b8414cf4da913039 Fix the name of the ServerManager process as ServerManager
+N	724b25085a213f892cab174a831a7810a3fc6909 Merge pull request #6956 from dmlloyd/wfly-3932-sec-mgr-svc
+N	dfa2b11533c941093211f7433c14ee178e9f75dd [AS7-462] use the PatchTool instead of the runner
+N	b3d18226321ca33ca87b59b7c2947b0c563749f5 add missing compensating/server updates
+N	3e26ab6c3be444d5b33643f1a309c5954f760535 [AS7_3085] Fixes to jpa to enable restarted datasources. Keep track of used classes from annotation index and uninject properly from the custom injector
+N	1ad0c3adec34ac4b2b46fcfc856d48ee69fd96c2 [WFLY-3155] Update jboss-msc to 1.2.2.Final
+N	fd3b72ff261387e3dbd50f4b3d5f03d28a5eaa18 [AS7-6608] Removing jbws-native modules
+N	041f0602b370e9a85625a7f948cea766d6d7b796 WFLY-1899 Refactor the way the securuty context is setup by the Undertow handler chain
+N	0ab6304f402ab744fb6cb24a01e87ad562dea0b9 WFLY-3728 Upgrade JGroups to 3.4.5.Final
+N	9bd9a0093a1aebbee3d5530abe884ef1e6736ab5 enabling previously disabled test cases
+N	8549ae00408f0a671d0c840bfc36bb3174c52b95 AS7-3142 put exception message into WebMessages and more tightly scope the try/catch block as per code review comments
+N	503080c586f390a121c0ec5245bd58c90bd37f44 AS7-5072 - proper ObjectListAttributeDefinition impl
+N	289b86a76807545c1d021ac5efcb4c243176c1ec [AS7-462] basic patching infrastructure
+M	ca0889baa918c2066bb2f1a7f0d76d2f68b42196 Merge pull request #5206 from n1hility/defaults-adapt
+Y(ITCA)	3d1c9b68764edf845cd20969337ee8387d96963e Test server controller root resources. Make it possible to read the runtime part of the model
+N	ebcf3531429b51f4efd7f27ec06f85b512243555 [JBOSGI-527] Unique error and warning message codes for all jbosgi projects
+N	f319b2c128714e6a1cab17b00169f65641132df9 Setup a dummy remoting connector reference for EJB3 in standalone.xml
+N	a29b44daeece3a239d669daac53be6ece040ea08 [AS7-3086] IronJacamar 1.0.7
+N	bb5719b6cebd704836b96b1924b5b05094f9e85f Update naming to no longer use the calling classloader. Only use the TCCL on lookup
+Y(NKF)	3ad941690b6c7f3c256309ea0edd3eeea68d7af2 AS7-5897 Introduced a feature to allow user application specific "container-interceptors" which gets applied before certain JBoss specific server side interceptors get applied
+N	391c62eb9d8347a9874a3dd1ca58a4f7f61d3db7 Put the parent pom back into something resembling alphabetical order
+N	ca500ec728f59b6a666f0f4ed1493b847f917a51 [AS7-974] embedded container configuration - code formatting fix
+Y(DC)	958cdb5c5540f9096f80ae1bd4c770ed451bd3c4 Fix reconnection to killed HC
+N	e8f0e94886ec2861f5d040f2811abb045105300d adapt test for pooled instances, count and reset the callback method counter rename the package for better representation of test cases
+N	f23a7501d3fb835ab7e84fa6424934ccddd2e7a1 Add archive validation to example configs
+N	0d2a466947624d5547c01692406a4cb8cce5fe71 [AS7-1205] Remove URL handler warnings at startup
+N	e47a2ba42a469ea78e1a07634d5d5cdc6be2343e Don't create a new instance for SFSB home views
+N	aec440895935bd469cb176f42452a497f03381ad Checkstyle fix
+Y(FNFB)	9402d9b0f8ee74344c558ece14ecd6797b436a54 AS7-5026 Cache the ExpressionFactory impl to improve EL performance
+N	2caf1a53e8a0605254dc547671a14dd5c1da9321 [WFLY-4114] Upgrade to JBoss Negotiation 2.3.5.Final
+N	a9be9e18e0f9fc441f14cfb71fcb553173d64dea Hack
+N	4fa4a318cbccd00ce3152aef0546f98d81e1d5f6 WFLY-3870: Upgrade HAL to 2.4.0.Final
+N	31e1dd58ebc2b3571c7cc259fc1044974d8957c8 [JBAS-8260] Rework DC ServerManagerCommunicationService to use SocketListener
+N	52991f426c20eeb23ef405a7cc95557261b9ce52 corrections to XT extension necessary to use 4.15.2.Final release
+N	78da46fa09676d5137ab551780082bb098da34a5 AS7-6120 Add transformation to threads resources Fix expression rejection test infrastructure
+N	bc1da71f93573b9c9a2dbf12385911000bec1558 Add assert messages, rename field to avoid hiding parent class field.
+N	924ba7013d5cbaea1147fb1221f655a46caf8386 Merge pull request #5618 from bstansberry/WFLY-2661
+N	a3c60bfe7701b848c85fac9b082bd2035bfa1acb [WFLY-1434] Enable assignment of groups for management users.
